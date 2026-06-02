@@ -1,0 +1,102 @@
+/* Overlay */
+.register-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Modal container */
+.register-modal {
+  background: #020617;
+  width: 90%;
+  max-width: 460px;
+  max-height: 90vh;          /* prevents overflow */
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 30px rgba(199, 125, 255, 0.35);
+}
+
+/* Header (fixed) */
+.register-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.register-header h2 {
+  margin: 0;
+  color: #c77dff;
+  font-size: 20px;
+}
+
+/* Close button */
+.close-btn {
+  background: none;
+  border: none;
+  color: #e5e7eb;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Scrollable form */
+.register-form {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Labels & inputs */
+.register-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  color: #cbd5f5;
+  margin-bottom: 12px;
+}
+
+.register-form input {
+  margin-top: 6px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #020617;
+  color: #e5e7eb;
+  outline: none;
+}
+
+.register-form input:focus {
+  border-color: #c77dff;
+}
+
+/* Actions */
+.register-actions {
+  margin-top: 16px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #7c3aed;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #6d28d9;
+}
+
+/* Mobile safety */
+@media (max-height: 600px) {
+  .register-modal {
+    max-height: 95vh;
+  }
+}

@@ -1,0 +1,52 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 40px;
+  background: #020617;
+  color: #e5e7eb;
+  border-top: 1px solid #1e293b;
+  flex-wrap: wrap;
+}
+
+
+.footer-left {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.footer-left .she {
+  font-family: "Playfair Display", serif;
+  color: #c77dff;
+}
+
+.footer-left .works {
+  font-family: "Poppins", sans-serif;
+  color: #e5e7eb;
+}
+
+/* Right helpline info */
+.footer-right {
+  max-width: 520px;
+  font-size: 18px;
+}
+
+.footer-right h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #c77dff;
+}
+
+.footer-right p {
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+  }
+}

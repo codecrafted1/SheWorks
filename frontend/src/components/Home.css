@@ -1,0 +1,44 @@
+.home {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.overlay {
+  background: rgba(2, 6, 23, 0.75);
+  padding: 60px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.overlay h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #e5e7eb;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+
+.cta-btn {
+  padding: 14px 36px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: #c77dff;
+  color: #020617;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(199, 125, 255, 0.5);
+}

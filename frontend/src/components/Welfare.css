@@ -1,0 +1,110 @@
+/* Fullscreen overlay */
+.welfare-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 6, 23, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+/* Bigger modal */
+.welfare-modal {
+  background: #020617;
+  border-radius: 16px;
+  width: 92%;
+  max-width: 900px;     /* BIGGER */
+  max-height: 85vh;
+  padding: 40px 50px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.9);
+  border: 1px solid #1e293b;
+  overflow-y: auto;
+}
+
+/* Header */
+.welfare-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.welfare-header h2 {
+  color: #c77dff;
+  font-size: 26px;
+}
+
+/* Close button */
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #e5e7eb;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #c77dff;
+}
+
+/* Scheme list */
+.scheme-list {
+  list-style: none;
+  padding: 0;
+}
+
+.scheme-list li {
+  margin-bottom: 30px; 
+}
+
+/* Scheme title */
+.scheme-list strong {
+  display: block;
+  color: #e5e7eb;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+/* Scheme description */
+.scheme-list p {
+  margin: 0;
+  font-size: 17px;
+  color: #cbd5f5;
+  line-height: 1.6;
+}
+
+/* Footer */
+.welfare-footer {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.cancel-btn {
+  padding: 12px 30px;
+  background: #1e293b;
+  border: none;
+  border-radius: 24px;
+  color: #e5e7eb;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cancel-btn:hover {
+  background: #c77dff;
+  color: #020617;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .welfare-modal {
+    padding: 30px 24px;
+  }
+
+  .welfare-header h2 {
+    font-size: 22px;
+  }
+}
